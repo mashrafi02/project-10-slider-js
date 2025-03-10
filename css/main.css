@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slider{
+    position: relative;
+    max-width: 620px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform ease-in-out 0.4s;
+}
+
+.slide{
+    min-width: 100%;
+}
+
+.slides img, .slides video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 3px 6px;
+    border: none;
+    border-radius: 3px;
+    background-color: #FFF;cursor: pointer;
+    opacity: 0.7;
+}
+button:hover{
+    opacity: 1;
+    background-color: #f0eeee;
+}
+button:active{
+    background-color: #afafaf;
+}
+
+.prev{
+    left: 5px;
+}
+
+.next{
+    right: 5px;
+}
+
+.dots{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+}
+
+.dots .dot{
+    display: inline-block;
+    background-color: yellowgreen;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 6px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.dots .active{
+    opacity: 1;
+    background-color: rgb(170, 227, 57);
+}
+
+
+.custom-html{
+    text-align: center;
+    background-color: orange;
+}
+
+.custom-html h1{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
